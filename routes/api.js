@@ -12,7 +12,7 @@ const expect = require('chai').expect;
 const ConvertHandler = require('../controllers/convertHandler.js');
 
 module.exports = function (app) {
-  
+
   let convertHandler = new ConvertHandler();
 
   app.route('/api/convert')
@@ -23,8 +23,13 @@ module.exports = function (app) {
       let returnNum = convertHandler.convert(initNum, initUnit);
       let returnUnit = convertHandler.getReturnUnit(initUnit);
       let toString = convertHandler.getString(initNum, initUnit, returnNum, returnUnit);
-      
-      //res.json
+
+      let resObject = {}
+      resObject['initNum'] = initNum;
+      resObject['initUnit'] = initUnit;
+      resObject['returnNum'] = returnNum;
+      resObject['returnUnit'] = returnUnit;
+      resObject['String'] = toString;
     });
-    
+
 };
