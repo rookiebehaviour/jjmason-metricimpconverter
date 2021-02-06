@@ -1,7 +1,52 @@
-code {
-    background-color: whitesmoke;
+body {
+  background-color: #B9C6BB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  font-size: 16px;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-section, header {
-    margin: 50px;
+h1 {
+  font-size: 40px;
+}
+
+form {
+  padding: 15px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+header {
+    margin: 10px;
+}
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#convert {
+  background-color: inherit;
+  border-radius: 5px;
+}
+.button {
+  cursor: pointer;
+}
+
+code {
+  color: black;
+}
+
+footer {
+font-size: 16px;
+font-style: italic;
+padding: 20px;
 }
