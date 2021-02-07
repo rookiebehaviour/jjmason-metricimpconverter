@@ -52,7 +52,6 @@ suite('Unit Tests', function(){
     test('No Numerical Input', function(done) {
       let input = 'kg';
       assert.equal(convertHandler.getNum(input), 1);
-      assert.equal(convertHandler.getUnit(input), 'kg');
       done();
     });
   });
